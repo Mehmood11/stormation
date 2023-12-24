@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;600;700;800&family=Maven+Pro:wght@400;500;600;700;800;900&family=Pacifico&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --gray: #899696;
+  --skyblue: rgb(32, 197, 209);
+}
+body {
+  background: url(images/background.png);
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Maven Pro", sans-serif;
+}
+.programmes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+}
+.programmes .main-programes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.programmes .main-programes .program-1 {
+  width: 400px;
+  /* flex-basis: 30%; */
+  height: 270px;
+
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 5px;
+  overflow: hidden;
+  position: relative;
+  /* background-color: yellow; */
+}
+.programmes .main-programes .pro-1 {
+  background: url(./images/Image\ -1.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.programmes .main-programes .pro-2 {
+  background: url(./images/Image\ -2.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.programmes .main-programes .pro-3 {
+  background: url(./images/Image\ -3.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: white;
+}
+.programmes .main-programes .pro-4 {
+  background: url(./images/Image\ -4.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: white;
+}
+.programmes .main-programes .pro-5 {
+  background: url(./images/Image\ -5.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: white;
+}
+.programmes .main-programes .pro-6 {
+  background: url(./images/Image\ -6.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: white;
+}
+.programmes .main-programes .pro-7 {
+  background: url(./images/Image\ -7.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: white;
+}
+.programmes .main-programes .pro-8 {
+  background: url(./images/Image\ -8.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: white;
+}
+.programmes .main-programes .pro-9 {
+  background: url(./images/Image\ -9.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: white;
+}
+.programmes .main-programes .pro-10 {
+  background: url(./images/Mask\ Group\ -1.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: white;
+}
+.programmes .main-programes .pro-11 {
+  background: url(./images/Image\ -10.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: white;
+}
+.programmes .main-programes .pro-12 {
+  background: url(./images/Image\ -11.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: white;
+}
+.programmes .main-programes .program-1 .hover-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  height: 100%;
+  background-color: rgba(63, 57, 57, 0.6);
+  z-index: 11;
+  transition: 0.3s ease;
+  display: none;
+  cursor: pointer;
+  color: white;
+}
+.programmes .main-programes .program-1 .hover-div p {
+  line-height: 30px;
+}
+.programmes .main-programes .program-1:hover h5,
+.programmes .main-programes .program-1:hover h4,
+.programmes .main-programes .program-1:hover h2 {
+  display: none;
+}
+.programmes .main-programes .program-1:hover .hover-div {
+  display: block;
+}
+@media screen and (max-width: 1293px) {
+  .programmes .main-programes .program-1 {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 986px) {
+  .programmes .main-programes .program-1 {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 821px) {
+  .programmes .main-programes .program-1 {
+    width: 300px;
+  }
+  .programmes .main-programes .program-1 .hover-div {
+    padding: 2px;
+  }
+  .programmes .main-programes .program-1 .hover-div p {
+    line-height: normal;
+  }
+}
+@media screen and (max-width: 686px) {
+  .programmes {
+    padding: 5px;
+  }
+  .programmes .main-programes .program-1 {
+    width: 260px;
+  }
+}
+@media screen and (max-width: 562px) {
+  .programmes .main-programes .program-1 {
+    width: 220px;
+  }
+}
+@media screen and (max-width: 489px) {
+  .programmes .main-programes .program-1 {
+    width: 100%;
+  }
+}

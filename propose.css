@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;600;700;800&family=Maven+Pro:wght@400;500;600;700;800;900&family=Pacifico&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --gray: #899696;
+  --skyblue: rgb(32, 197, 209);
+}
+body {
+  background: url(images/background.png);
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Maven Pro", sans-serif;
+}
+.propose {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px;
+}
+.propose .main-propose {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 10px;
+  width: 100%;
+}
+.propose .main-propose .top-propose {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  /* flex-direction: column; */
+  padding: 10px;
+  width: 100%;
+}
+.propose .main-propose .left-propose {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 10px;
+  width: 50%;
+}
+.propose .main-propose .left-propose p {
+  margin-top: 20px;
+  line-height: 30px;
+}
+.propose .main-propose .right-propose {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  width: 40%;
+  margin-top: 20px;
+}
+.propose .main-propose .right-propose img {
+  height: 200px;
+  width: 70%;
+  margin: 5px;
+  object-fit: cover;
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
+    rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
+    rgba(240, 46, 170, 0.05) 25px 25px;
+}
+.propose .main-propose .bottom-propose {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  /* flex-direction: column; */
+  padding: 10px;
+  width: 100%;
+}
+@media screen and (max-width: 800px) {
+  .propose .main-propose .right-propose img {
+    width: 100%;
+  }
+  .propose {
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .propose .main-propose .top-propose,
+  .propose .main-propose .bottom-propose {
+    flex-direction: column;
+  }
+  .propose .main-propose .top-propose .left-propose,
+  .propose .main-propose .bottom-propose .left-propose,
+  .propose .main-propose .top-propose .right-propose,
+  .propose .main-propose .bottom-propose .right-propose {
+    width: 100%;
+  }
+  .propose {
+    padding: 5px;
+  }
+}
+
+/* Notes */
+.notes {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+}
+.notes .main-notes {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+  flex-wrap: wrap;
+  width: 100%;
+  /* margin: 5px; */
+}
+.notes .main-notes .notes-1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 10px;
+  flex-wrap: wrap;
+  width: 400px;
+  margin: 5px;
+  border-radius: 10px;
+  box-shadow: rgb(204, 232, 231) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+.notes .main-notes .notes-1 img {
+  border-radius: 30px;
+  width: 150px;
+}
+
+@media screen and (max-width: 888px) {
+  .notes .main-notes .notes-1 {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 686px) {
+  .notes .main-notes .notes-1 {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .notes .main-notes .notes-1 {
+    width: 100%;
+  }
+}
+/* Notes End */
